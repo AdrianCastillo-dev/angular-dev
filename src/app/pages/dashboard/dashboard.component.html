@@ -1,0 +1,12 @@
+<app-nav></app-nav>
+<p *ngIf="!userLoginOn" class="alert alert-danger">Usuario NO autenticado</p>
+<p *ngIf="userLoginOn" class="alert alert-success">Usuario Autenticado</p>
+
+<div class="card ">
+    <div class="card-header">
+        Crud
+    </div>
+    <div class="card-body m-0">
+        <app-user-table></app-user-table>
+    </div>
+</div>

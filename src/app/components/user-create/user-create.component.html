@@ -1,0 +1,24 @@
+<div class="card ">
+  <div class="card-header">
+      New User
+  </div>
+  <div class="card-body m-0">
+      <div class="mb-3 row">
+        <form (ngSubmit)="onSubmit()" [formGroup]="userNew">
+          <div>
+            <label for="name">Name:</label>
+            <input style="margin: 5px;" type="text" id="name"  formControlName="name" >
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input style="margin: 5px;" type="email" id="email"  formControlName="email" >
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input style="margin: 5px;" type="password" id="password"  formControlName="pass" >
+          </div>
+          <button type="submit" class="btn btn-outline-success">Save</button>
+        </form>
+      </div>
+  </div>
+</div>
